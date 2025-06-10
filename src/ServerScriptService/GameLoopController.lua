@@ -80,6 +80,7 @@ end
 
 -- Utility --------------------------------------------------------------------
 local function broadcastState()
+    print("[Server] State:", currentState, "Remaining:", remaining)
     roundStateChanged:FireAllClients(currentState, remaining)
 end
 
